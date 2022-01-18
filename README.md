@@ -2,7 +2,7 @@
 
 ## Introduction
 
-Welcome to the King's Online Web Developer task. This a short programming task that is designed to see how you approach problem-solving a technical issue. Please commit your response to your own git repository and then email the link to danielle.johnstone@kcl.ac.uk by **Tuesday, February 25th at 17.00**.
+Welcome to the King's Online Web Developer task. This a short programming task that is designed to see how you approach problem-solving a technical issue. Please commit your response to your own git repository and then email the link to danielle.johnstone@kcl.ac.uk by **Tuesday, February 2nd at 17.00**.
 
 ## The problem
 
@@ -10,7 +10,16 @@ The King's Online E-learning Content Developer (ELCD) team build our courses by 
 
 The ELCD team find that reordering of citations within the content results in a need to adjust the footnote reference list and the current manual generation of each citation/reference pair allows room for human error in this process. A development ticket has been submitted requesting that the list of footnote references is created automatically, based on the ordering of the citations within the main content.
 
-For this task you will be provided with both the existing HTML (`current-html.html` - manual pairing version) of the component and the starter HTML for the task, along with the completed CSS. Your task is to write a JS function that generates a footnote reference list from citation/reference pairs in the main content of the starter HTML file, enabling the list to remain accurate if the pairs are reordered.
+For this task you will be provided with both the existing HTML (manual pairing version) of the component and the starter HTML for the task, along with the completed CSS. Your task is to write a JS function that generates a footnote reference list from citation/reference pairs in the main content of the starter HTML file, enabling the list to remain accurate if the pairs are reordered.
+
+## File structure
+
+- `current-html.html` - existing HTML with manual pairing of citations and references 
+- `starter-html.html` - the starter HTML provided for the task
+- `css/style.css` - styles for the Footnotes component
+- `js/script.js` - a blank JS file for the task
+
+**Please note: the `js/script.js` file is the only file you will need to edit for this task.**
 
 ## Task
 
