@@ -1,0 +1,95 @@
+/* King's headings font */
+@font-face {
+	 font-family: "KingsBureauGrot";
+	 src: url("https://git.iddkingsonline.com/assets/fonts/KingsBureauGrot-ThreeSeven.ttf") format("truetype");
+	 font-weight: bold;
+	 font-style: normal;
+}
+
+/* generic container styles */
+section {
+	 max-width: 600px;
+	 margin: 2.25rem auto;
+	 font-family: 'Open Sans', sans-serif;
+}
+section h1 {
+	 font-family: "KingsBureauGrot";
+	 color: #171717;
+}
+section p {
+	 font-size: 16px;
+	 color: #333;
+}
+
+/* footnotes component */
+.footnotes-article {
+	 margin-bottom: 1.5rem;
+}
+.footnotes-article .footnotes-body {
+	 counter-reset: citation;
+}
+.footnotes-article .footnotes-body .citation {
+	 color: #333;
+	 counter-increment: citation;
+	 text-decoration: none !important;
+}
+.footnotes-article .footnotes-body .citation .ref {
+	 color: #5a6469;
+	 font-style: italic;
+}
+.footnotes-article .footnotes-body .citation .ref::before {
+	 content: " [";
+}
+.footnotes-article .footnotes-body .citation .ref::after {
+	 content: "]";
+}
+.footnotes-article .footnotes-body .citation::after {
+	 content: counter(citation);
+	 text-decoration: underline;
+	 font-size: 0.875rem;
+	 vertical-align: top;
+	 position: relative;
+	 top: -4px;
+	 padding: 4px;
+	 border-radius: 4px;
+}
+.footnotes-article .footnotes-body .citation:hover,
+.footnotes-article .footnotes-body .citation:target,
+.footnotes-article .footnotes-body .citation:focus {
+	 text-decoration: underline !important;
+	 outline: none;
+}
+.footnotes-article .footnotes-footer {
+	 border-top: 1px solid #8b9296;
+	 padding: 1.5rem 0 0 0;
+	 margin: 1.5rem 0 0 0;
+}
+.footnotes-article .footnotes-footer ol {
+	 margin: 0 0 0 2.25rem;
+}
+.footnotes-article .footnotes-footer ol li {
+	 display: list-item !important;
+	 padding: 0 calc(20px + 1rem) 0 4px;
+}
+.footnotes-article .footnotes-footer ol li .ref {
+	 font-size: 0.875rem;
+	 line-height: 1.5;
+}
+.footnotes-article .footnotes-footer ol li::marker {
+	 font-size: 14px;
+}
+.footnotes-article .footnotes-footer ol li::before {
+	 display: none !important;
+}
+.footnotes-article .footnotes-footer ol li.selected {
+	 position: relative;
+}
+.footnotes-article .footnotes-footer ol li.selected .ref {
+	 font-weight: bold;
+}
+.footnotes-article .footnotes-footer ol li.selected::marker {
+	 font-weight: bold;
+}
+.footnotes-article .footnotes-footer ol li:not(.selected) a {
+	text-decoration: none;
+}
