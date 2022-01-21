@@ -6,7 +6,7 @@ Welcome to the King's Online Web Developer task. This a short programming task t
 
 ## The problem
 
-The King's Online E-learning Content Developer (ELCD) team build our courses by using components to present content and activities. The Footnotes component is used when cited sources are included in the main content of a page. An ordered list of footnote references, which includes information such as the author, title of work, etc.  appears at the bottom of the page, with each reference number corresponding to a numbered citation.
+The King's Online E-learning Content Developer (ELCD) team build our courses by using components to present content and activities. The Footnotes component is used when cited sources are included in the main content of a page. An ordered list of footnote references, which includes information such as the author, title of work, etc.  appears at the bottom of the page, with each reference number corresponding to a numbered citation. (See foerm-html.html for an example created this way by a content developer)
 
 The content developers find that reordering of citations within the content results in a need to adjust the footnote reference list and the current manual generation of each citation/reference pair allows room for human error in this process. A development ticket has been submitted requesting that the list of footnote references is created automatically, based on the ordering of the citations within the main content.
 
