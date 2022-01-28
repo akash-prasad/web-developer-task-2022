@@ -1,5 +1,5 @@
 /* For this task you will be provided with both the existing HTML
- * (`current-html.html` - manual pairing version) of the component and the
+ * (`former-html.html` - manual pairing version) of the component and the
  * starter HTML for the task, along with the completed CSS. Your task is to
  * write a JS function that generates a footnote reference list from
  * citation/reference pairs in the main content of the starter HTML file,
