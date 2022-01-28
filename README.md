@@ -35,7 +35,7 @@ To successfully complete the task, you must:
 
 ## Submitting and presenting
 
-Once you are ready to submit, please commit your response to your own git repository and then email the link to danielle.johnstone@kcl.ac.uk by **Tuesday, February 2nd at 17.00**, with email subject "dev task".
+Once you are ready to submit, please commit your response to your own git repository and then email the link to danielle.johnstone@kcl.ac.uk by **Tuesday, February 1st at 17.00**, with email subject "dev task".
 
 **During your interview**, you will be asked to present the work you did for the task and explain your approach (5 mins). The panel will have a chance to ask you some questions about the task. You may wish to address the following when you present or during the questions:
 
