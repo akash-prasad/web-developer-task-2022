@@ -18,3 +18,58 @@
  *    pairs are reordered within the main content
  */
  
+//generating all the citations and references
+function generateCitations() {
+    let citations = document.querySelectorAll('.citation');
+    let citationRef = document.querySelectorAll('.ref');
+    let citationsLength = citations.length;
+    let citationReferences = getCitationReferences(citationsLength, citationRef);
+
+    for (let i = 0; i < citationsLength; i++) {
+        let parentTag = citations[i].parentNode;
+        let aTag = document.createElement('a');
+
+        citations[i].setAttribute('class', 'citation-text');
+        aTag.setAttribute('id', 'citations' + (i + 1));
+        aTag.setAttribute('class', 'citation');
+        aTag.setAttribute('role', 'doc-noteref');
+        aTag.setAttribute('title', 'Jump to reference');
+        aTag.setAttribute('href', '#ref' + (i + 1));
+        aTag.appendChild(citations[i]);
+        parentTag.appendChild(aTag);
+        citationRef[i].remove();
+    }
+    generateFooter(citationsLength, citationReferences);
+}
+
+//Storing all the references
+function getCitationReferences(citationsLength, citationRef) {
+    let citationReferences = [];
+    for (let i = 0; i < citationsLength; i++) {
+        citationReferences.push(citationRef[i].outerHTML);
+    }
+    return citationReferences;
+}
+
+//generating the footer with all the references
+function generateFooter(citationsLength, citationReferences) {
+    let articleBody = document.querySelector('.footnotes-article');
+    let divTag = document.createElement('div');
+    let olTag = document.createElement('ol');
+    divTag.setAttribute('class', 'footnotes-footer');
+
+    for (let i = 0; i < citationsLength; i++) {
+        let liTag = document.createElement('li');
+        let aTag = document.createElement('a');
+
+        liTag.setAttribute('id', 'ref' + (i + 1));
+        aTag.setAttribute('href', '#citation' + (i + 1));
+        liTag.appendChild(aTag);
+        aTag.innerHTML = citationReferences[i];
+        olTag.appendChild(liTag);
+    }
+    divTag.appendChild(olTag);
+    articleBody.appendChild(divTag);
+}
+
+generateCitations();
